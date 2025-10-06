@@ -5,7 +5,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.svm import SVR
 from sklearn.pipeline import Pipeline
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
-from preprocessing.house_price_preprocessor import full_preprocessor
+from preprocessing.preprocessors import full_preprocessor
 from sklearn.compose import TransformedTargetRegressor
 from sklearn.preprocessing import StandardScaler, FunctionTransformer
 
