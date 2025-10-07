@@ -14,7 +14,7 @@ class FeatureEngineer(BaseEstimator, TransformerMixin):
         X_ = X.copy()
         X_['age'] = 2025 - X_['yr_built']
         X_['was_renovated'] = np.where(X_['yr_renovated'] > 0, 1, 0)
-        X_.drop(columns=['yr_built', 'yr_renovated', 'sqft_above'], inplace=True)
+        X_ = X_.drop(columns=['yr_built', 'yr_renovated', 'sqft_above'])
         return X_
 
 class OutlierClipper(BaseEstimator, TransformerMixin):
