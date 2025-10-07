@@ -1,6 +1,8 @@
 import numpy as np
 
 def clean_data(df):
+    df = df.copy()
+
     required_columns = ['bedrooms','bathrooms','floors', 'waterfront','view', 'condition', 
                         'yr_renovated', 'yr_built', 'sqft_lot', 'sqft_living', 'sqft_above',
                         'sqft_basement', 'city', 'price' ]
