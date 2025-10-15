@@ -137,6 +137,7 @@ celerybeat.pid
 # data folder
 data/*
 !data/.gitkeep
+!data/README.md
 
 # Environments
 .env
